@@ -18,6 +18,3 @@ La idea del proyecto es aplicar Lazy Load por componente y por módulo
 ### Extensible Styles
 
 ### Control Props
-
-Las rutas se implementaron con React Router Dom v6
-La idea del proyecto es aplicar Lazy Load por componente y por módulo
