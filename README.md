@@ -19,4 +19,6 @@ Los componentes compuestos ayudan a construir APIs más expresivas y flexibles p
 
 ### Extensible Styles
 
+Este patron sirve para extender la funcionalidad de nuestro componente añadiendo la posibilidad de interpretar clases de CSS y/o estilos en línea (inline styles)
+
 ### Control Props
