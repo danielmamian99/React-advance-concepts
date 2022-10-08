@@ -2,6 +2,11 @@
 
 Este proyecto esta creado para implementar técnicas avanzadas sobre el manejo de rutas, y diseño de componentes en react.
 
+Cada patrón y tema del siguiente proyecto esta separado por branch, por ejemplo para ver la implementación del patrón Compount Component Pattern ir a la rama component-compund, puede ejecutar el comando:
+
+git checkout component-compound
+
+
 Para iniciar usar:
 
 yarn install
