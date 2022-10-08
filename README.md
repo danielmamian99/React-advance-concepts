@@ -15,6 +15,8 @@ La idea del proyecto es aplicar Lazy Load por componente y por módulo
 
 ### Compound Component Pattern
 
+Los componentes compuestos ayudan a construir APIs más expresivas y flexibles para compartir el estado y la lógica dentro de los componentes mediante el uso del patrón HOC y Context API
+
 ### Extensible Styles
 
 ### Control Props
