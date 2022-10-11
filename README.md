@@ -25,4 +25,4 @@ Este patron sirve para extender la funcionalidad de nuestro componente añadiend
 ### Control Props
 git checkout component-control-props
 
-Este patron se basa en propiedades de control que le permiten saber a nuestros consumidores en que momento cambia y también establecer un valor para que podamos usarlos y pasarlos a nuestros componentes
+Este patron se basa en propiedades de control que le permiten saber a los consumidores de nuestros componentes en que momento cambia, y también posibilita establecer los valores del estado del componente. O visto de otra forma, nos da el poder de decidir si queremos que el componente maneje el estado por defecto o si queremos manejarlo nosotros mismos.
