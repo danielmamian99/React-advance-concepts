@@ -24,3 +24,8 @@ export interface ProductCardHOCProps {
     Image: (Props: ProductImageProps) => ReactElement;
     Title: (Props: ProductTitleProps) => ReactElement;
 }
+
+export interface OnChangeArgs{
+  product: Product;
+  count: number;
+}
