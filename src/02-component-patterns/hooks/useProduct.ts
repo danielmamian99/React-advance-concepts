@@ -10,11 +10,13 @@ interface useProductArgs {
 export const useProduct = ({onChange, product, value = 0, initialValues}:useProductArgs)=> {
     const [counter, setCounter] = useState<number>(initialValues?.count || value);
     const isMounted = useRef(false);
-    console.log('initialValues >>>', initialValues?.count);
     const increaseBy = (value:number):void=>{
-        const newValue = Math.max(counter + value, 0)
+        const newValue = initialValues?.maxCount ? Math.min(initialValues.maxCount, Math.max(counter + value, 0)) : Math.max(counter + value, 0);
         setCounter(newValue);
         onChange && onChange({ count:newValue, product })
+    }
+    const reset = ()=>{
+        setCounter(initialValues?.count || value)
     }
     useEffect(() => {
         if( !isMounted.current ) return;
@@ -27,6 +29,10 @@ export const useProduct = ({onChange, product, value = 0, initialValues}:useProd
     
     return{
         counter,
-        increaseBy
+        isMaxCountReached: !!initialValues?.maxCount && initialValues.maxCount === counter,
+        maxCount: initialValues?.maxCount,
+
+        increaseBy,
+        reset
     }
 }
